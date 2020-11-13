@@ -1,0 +1,18 @@
+
+
+=>>In Menu Options Add On Mouse Hover
+=>>Change Menu Icon Into Three Bars
+=>>Change Cancel Icon Into Arrow
+=>Avoid Multiple Login Of the Same User In Different Devices
+
+
+Cleared List
+    User
+    status
+    inlimit
+    outlimit
+
+confirm alert, on specific div
+Mark All As Read
+Back Arrow Button
+Move With Msg Info

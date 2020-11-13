@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<!-------------------------------------------- This App Develeped By Muddy (Optimist#700) ------------------------------------------------------------->
+<!------------------------------------------------------ All Rights Reserved --------------------------------------------------------------------------->
+
+<!------------------- Html Document For CRUD OPERATIONS App -------------------------------->
+
+<!------------------- Head Starts Here -------------------------------------------->
+
+<head>
+    <meta charset="utf-8">
+    <title>Fast Chat Room | Home</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!------------------- Css For The Document --------------------------------------->
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="db.js"></script>
+
+
+</head>
+<!------------------- Head Ends Here --------------------------------------------->
+
+
+<!------------------- Body Starts Here ------------------------------------------->
+
+<body  onload="loadingPage()">
+    <!------------------- Bodys' Opening Tag----------------->
+
+
+
+    <div id="container">
+
+
+        <div id="log-in">
+            <!-- <div id="logo"> -->
+                    <img id="logo" src="assets/bg1b.PNG" >  <br />
+            <!-- </div> -->
+
+            <div id="log-div">
+                <div id="form-title">
+                    Fast Chat Room
+                </div>  <!--Form-Title Ends Here-->
+                <!-- <form id="logInForm"> --><form name="form12">
+                <div id="logInForm">
+                    <!-- onkeyup="verifyUserName()" -->
+                    <input type="text" id="userName" class="getData" name="user"  placeholder="  Username" oninput="clearLogError()">  <br />
+                    <input type="password" id="logPass" class="getData" placeholder="  Password" oninput="clearLogError()">  <br />
+                    <input type="button" id="getIn" class="getData" value="Login" onclick="logIn()">  <br /> 
+                    <span id="logError"></span>  <br />
+                    <input type="button" id="forgot" class="linkBtn" value="Forgot Password?" >
+                    <input type="button" id="account" class="linkBtn" value="Create Account" onclick="callAccountPage()">
+                </div> </form>
+                <!-- </form>  Form Ends Here-->
+            </div>  <!--Log-Form Ends Here-->
+
+        </div>  <!--Log-In Ends Here-->
+
+
+        <div id="inner-border">
+            <div id="account-div">
+                <div id="form-title" >
+                    Create Account
+                </div>
+                <!--Form-Title Ends Here-->
+                <div id="logInForm">
+                    <form name="accountForm">
+                        <input type="text" id="newName" class="getData" name="uName" placeholder="  Username" onkeyup="validateName()" oninput="clearAccountError()"> <br />
+                        <span id="accountError2" class="acountErrors"></span>  <br />
+                        <input type="password" id="accountPassword1" name="password1" class="getData" placeholder="  Password"  oninput="clearAccountError()"><br />
+                        <span id="accountError3" class="acountErrors"></span> <br />
+                        <input type="password" id="accountPassword2" name="password2" class="getData" placeholder="  Password"  oninput="clearAccountError()"><br />
+                        <span id="accountError4" class="acountErrors"></span> <br />
+                        <input type="button" id="getIn" class="getData" value="Create" onclick="createAccount()"> <br />
+                        <input type="button" id="account" class="linkBtn" value="Login" onclick="callLoginPage()">
+                    </form>
+                </div> <!-- </form>  Form Ends Here-->
+            </div><!--Account-Form Ends Here-->    <!-- onclick="confirmFirst()" -->
+
+            <div id="sidebar" >
+                <!-- <hr /> -->
+                <input type="button" id="menu1" class="options" value="Menu Options">
+                <input type="button" value="X" id="closeBar1" class="closeBar" onclick="closeSetting()"> <br /> 
+                <input type="button" id="mark" class="options" value="Mark All As Read"> <br />  
+                <input type="button" id="cin" class="options" value="Clear Inbox" onclick="callConfirmation('inbox')"> <br />
+                <input type="button" id="cout" class="options" value="Clear Outbox"  onclick="callConfirmation('outbox')"> <br />
+                <input type="button" id="theme" class="options" value="Dark Mode" onclick="changeTheme()"> <br />
+                <input type="button" id="changePass2" class="options" value="Change Password" onclick="changePassword()"> <br />
+                <input type="button" id="help" class="options" value="Help And Feedback" onclick="callFeedBack()"> <br />
+                <input type="button" id="prof" class="options" value="Profile" onclick="openProfile()"> <br />
+                <input type="button" id="abt" class="options" value="About" onclick="showAbout()">
+                <input type="button" id="log" class="options" value="Logout" onclick="callConfirmation('logout')">
+            </div> <!--SideBar Ends Here-->
+
+                        <div id="confirmation-Div" onmouseover="changeBackgroundColor()">
+                        
+                            <!-- <h4 id="confirm-title">Are You Sure You Want To Clear Inbox?</h4> -->
+                            <div id="confirm-title">Are You Sure You Want To Clear Inbox? </div>
+                            <!-- Are You Sure You Want To Clear Inbox? <br />   <br /> -->
+                            <input type="button" id="cancel-confirm" class="confirm-inputs" value="CANCEL" onclick="closeConfirmation()">
+                            <input type="button" id="ok-confirm" class="confirm-inputs" value="YES" onclick="givePermission()">
+                        </div>
+
+
+            <div id="profile">
+                <input type="button" value="X" id="closeBar2" class="closeBar" onclick="callSetting()"> <br />
+                <div id="image">
+                    <div id="photo">M</div>
+                </div>
+                <div id="info">
+                Name : <label id="name"></label> <br /> <br />
+                Password : <input type="text" id="password" value="********" disabled> <br /> <br />
+                <input type="button" id="showPass" value="Show Password" onclick="showPassword()">
+                </div>
+            </div> <!--Profile Ends Here-->
+
+            <div id="about">
+                <input type="button" value="X" id="closeBar3" class="closeBar" onclick="callSetting()">
+                <input type="button" id="menu2" class="" value="About App">
+                <p id="story">
+                   &nbsp; &nbsp; This App Developed And Maintained By Mohamed Mfaume, The One Who Created Mo Caluu And Password Generator Applications.
+                </p>
+            </div> <!--About Ends Here-->
+
+            <div id="feedback">
+                <input type="button" value="X" id="closeBar4" class="closeBar" onclick="callSetting()"> 
+                <input type="button" id="menu3" class="" value="Support"> <br /> <br />
+                <input type="text" id="query" placeholder=" Describe Your Issue">  <br /> <br />
+                <input type="button" id="sendFeeds" value="Send Feedback" onclick="showResponse()" >
+                <div id="response">Your Issue Has Been Received.  <br /> 
+                  <input type="button" value="OK" id="closeResponse" onclick="callSetting()">
+                </div>
+            </div> <!--FeedBack Ends Here-->
+
+            <div id="setting">
+                <input type="button" value="X" id="closeBar5" class="closeBar" onclick="callSetting()">
+                <input type="button" id="menu4" class="" value="Password"> <br />
+                <form id="form1" name="passForm">
+                    <label class="labels">New : </label><input type="password" name="passwords1" id="password1" class="inputs" placeholder="eg. ****">   <br />
+                    <label class="labels">Repeat : </label><input type="password" name="passwords2" id="password2" class="inputs" placeholder="eg.  ****"> <br />
+                    <span id="passwordError" class="spans"></span> <br />
+                    <input type="button" id="changePass" value="Change" onclick="verifyPassword()">
+                </form>
+                <div id="response2">Your Password Has Been Changed. <br />
+                    <input type="button" value="OK" id="closeResponse" onclick="callSetting()">
+                </div>
+                
+            </div> <!--Setting Ends Here-->
+
+            <div id="header" >
+                <input type="button" value="&#xFE19;" id="dots" onclick="callSetting()">
+                <div id="title">
+                Fast Chat Room
+                </div>
+            </div> <!--header Ends Here-->
+
+            <div id="mini-header"   onclick="closeSetting()">
+                <input type="button" id="inbox" class="home-header" value="Inbox" onclick="goInbox()">
+                <input type="button" id="outbox"  class="home-header" value="Outbox" onclick="goOutbox()">
+                <input type="button" id="contacts"  class="home-header" value="Contacts" onclick="listContacts()">
+            </div>  <!--Mini Header Ends Here-->
+
+            <div id="incoming-div" onclick="closeSetting()">
+
+                <!-- <input type="button" id="Add-sms" value="New Sms" onclick="createMessage()">  -->
+
+            </div>  <!--Incoming-Div Ends Here-->
+            <div id="creating-msg"  onclick="closeSetting()">
+                <form name="smsForm">
+                <input type="text" id="destination" name="receiver" class="getData" placeholder="  To" onkeyup="validateReceiver()" oninput="clearAccountError()"> <br />
+                <span id="receiver-Error" class="acountErrors"></span> <br /> <br />
+                </form>
+                <input type="text" id="messageContent" placeholder=" Enter Your Message Here"> <br /> 
+                <input type="button" id="Add-sms" value="Send" onclick="sendMessage()">
+            </div>
+
+            <div id="outgoing-div"  onclick="closeSetting()">
+
+            </div>  <!--Outgoing-Div Ends Here-->
+
+            <div id="people-div"  onclick="closeSetting()">People
+
+            </div>  <!--People-Div Ends Here-->
+
+            <div id="singleMessage-div" onclick="closeSetting()">
+                <div id="messageHeader-div">
+                    <input type="button" value="&larr;" id="backArrow" onclick="closeSingleMessage()"> 
+                    <div id="senderName-div"> Sender Name</div>                    
+                </div>
+
+                <div id="messageBody-div">
+                     Openned Message Will Goes Here.
+                </div>
+                <!-- <form name="smsForm">
+                    <span id="receiver-Error" class="acountErrors"></span> <br /> <br />
+                </form> -->
+                
+                <div id="replyArea">
+                    <form name="replyForm">
+                        <input type="text" id="messageContent2" name="replyInput" placeholder=" Enter Your Message Here">
+                    </form>    
+                </div>
+                <input type="button" id="Add-sms" value="Reply" onclick="replyMessage()">
+            </div>   <!--SingleMessage-Div Ends Here-->
+        </div> <!-----------Inner-Border Ends Here-------------->
+
+            <div id="footer" onclick="closeSetting()">
+                <h3 id="footer-msg">Powered By Brungas.com</h3>
+            </div>
+            <!-----------Footer Ends Here-------------->
+    </div><!---------------Container Ends Here---------------->
+        
+        
+        <script src="app.js"></script>
+        </body>
+        <!------------------- Body Ends Here----------------->
+        
+        </html>
+        <!------------------- Ends Of Html Document For Caluu App----------------->
+        
+        
+        <!-------------------------------------------- This App Develeped By Muddy (Optimist#700) ------------------------------------------------------------->
+        <!---------------------------------

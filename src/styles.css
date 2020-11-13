@@ -1,0 +1,517 @@
+body{
+
+    background-color:  lightgray;
+    margin: 0%;
+}
+
+#container{
+
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+@media (min-width : 700px) {
+  
+#container{
+    width: 30%;
+        margin-left: 35%;
+    /* margin-right: 35%; */
+    }
+    
+    #footer{
+    width: 30%;
+    /* position:fixed; */
+    /* bottom: 0%; */
+    }
+}
+
+@media (max-width : 700px) {
+    
+    #footer{
+    width: 100%;
+    /* position:fixed; */
+    /* bottom: 0%; */
+    }
+}
+
+#footer{
+
+    background-color:black;
+    /* width: 100%; */
+    height: 10%;
+    text-align: center;
+    position:fixed;
+    bottom: 0%;
+    color: white;
+}
+
+#log-in{
+
+    width: 100%;
+    height: 90%;
+    /* background-color: #c89666; */
+    padding-top: 5%;
+    text-align: center;
+
+}
+
+#confirmation-Div{
+    width: 80%;
+    height: 20%;
+    background-color: darkgray;
+    position: absolute;
+    margin-left: 10%;
+    border-radius: 5px solid  red;
+    margin-top: 50%;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    padding-top: 5%;
+}
+
+
+ 
+#confirm-title{
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    margin-top: 10%;
+} 
+
+.confirm-inputs{
+    /* margin-top: 2%; */
+    height: 30px;
+    width: 40%;
+    /* border-radius: 5px; */
+    background-color: inherit;
+    border: 0px;
+    /* color: blue; */
+}
+
+
+#logo{
+
+    width: 30%;
+    height: 20%;
+    /* background-color: seashell; */
+    border: 5px solid #c89666;
+    border-radius: 100px;
+    /* margin-left: 35%; */
+}
+
+#log-div{
+    
+    width: 80%;
+    height: 60%;
+    margin-top: 5%;
+    margin-left: 10%;
+    border: 2px solid black;
+    /* background-color: tomato; */
+    border-radius: 1%;
+}
+
+#form-title{
+
+    width: 100%;
+    height: 16%;
+    background-color: #c89666;
+    font-weight: bolder;
+    font-size: xx-large;
+    padding-top: 5%;
+}
+
+#logInForm{
+
+    width: 100%;
+    height: 80%;
+    /* background-color: white; */
+    /* border: 5px solid red; */
+
+}
+
+.getData{
+    margin-top: 8%;
+    height: 30px;
+    width: 50%;
+    border-radius: 5px;
+    /* background-color: silver; */
+    /* border: 0px; */
+
+}
+
+.linkBtn{
+    width: 45%;
+    height: 30px;
+    border: 0px;
+    background-color: inherit;
+    color: blue;
+    
+}
+
+#getIn{
+    margin-top: 8%;
+    height: 40px;
+    color: black;
+    width: 50%;
+    border-radius: 20px;
+    background-color: #c89666;
+    font-weight: bolder;
+}
+
+#Add-sms {
+    margin-top: 8%;
+    float: right;
+    height: 40px;
+    margin-right: 2%;
+    color: black;
+    width: 30%;
+    border-radius: 20px;
+    background-color: lightgray;
+    font-weight: bolder; 
+}
+
+#destination , 
+#messageContent {
+    background-color:  lightgray;
+}
+#logError {
+
+    color: red;
+}
+
+.acountErrors {
+
+    color: red;
+}
+
+#inner-border{
+
+    width: 100%;
+    height: 100%;
+}
+
+#sidebar , 
+#profile , 
+#about ,
+#feedback , 
+#setting{
+
+    width: 60%;
+    height: 90%;
+    background-color: lightgray;
+    position: absolute;
+}
+
+#account-div{
+    
+    width: 80%;
+    height: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    border: 2px solid black;
+    /* background-color: tomato; */
+    border-radius: 1%;
+    text-align: center;
+}
+#image{
+
+    width: 50%;
+    height: 20%;
+    background-color: #c89666;
+    border-radius: 150px;
+    text-align: center;
+    margin-left: 25%;
+    font-weight: bolder;
+    font-size: xx-large;
+    
+}
+
+#photo{
+
+    padding-top: 40%;
+}
+
+#info{
+
+    text-align: left;
+    padding-top: 10%;
+    margin-left: 15%;
+    font-weight: bold;
+}
+
+#password{
+
+    width: 40%;
+    /* background-color: rosybrown; */
+    border: 0px;
+    /* float: right; */
+}
+
+#response2{
+
+    text-align: center;
+}
+
+#showPass{
+
+    border: 0px;
+    background-color: #c89666;
+    border-radius: 5px;
+}
+#header{
+
+    width: 100%;
+    height: 8%;
+    text-align: center;
+    background-color: #c89666;
+    padding-top: 2%;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+#title{
+
+    width: 90%;
+    height: 100%;
+    float: left;
+    /* background-color: #c89666; */
+}
+
+#dots{
+
+    width: 10%;
+    height: 100%;
+    float: left;
+    font-weight: bolder;
+    font-size: xx-large;
+    background-color: inherit;
+    border: 0px;
+}
+
+#backArrow{
+
+    width: 10%;
+    height: 100%;
+    float: left;
+    font-weight: bolder;
+    font-size: xx-large;
+    background-color: inherit;
+    border: 0px;
+    color: white;
+
+}
+
+#menu1 , 
+#menu2 , 
+#menu3 , 
+#menu4 {
+
+    width: 88%;
+    height:10% ;
+    background-color: inherit ;
+    font-weight: bolder;
+    font-size: x-large;
+    border: 0px;
+}
+
+#story{
+
+    font-size: large;
+    margin-left: 3%;
+}
+
+.closeBar{
+
+    width: 10%;
+    height: 10%;
+    float: right;
+    font-weight: bolder;
+    font-size: large;
+    background-color: inherit ;
+    border: 0px;
+    margin-right: 2%;
+
+}
+
+#closeResponse{
+
+    width: 30%;
+    height: 10%;
+    margin-top: 10%;
+    /* float: right; */
+    font-weight: bolder;
+    font-size: large;
+    background-color: inherit;
+    border: 0px;
+    border-radius: 10px;
+    /* margin-right: 2%; */
+
+}
+#feedback{
+
+    text-align: center;
+}
+#query , 
+#messageContent{
+
+    width: 80%;
+    height: 10%;
+    border-radius: 10px;
+    /* margin-left: 10%; */
+    border: 0px;
+}
+
+#sendFeeds{
+
+    width: 60%;
+    height: 7%;
+    border-radius: 20px;
+    border: 0px;
+}
+
+.labels{
+
+    font-size: large;
+}
+
+.inputs{
+    margin-top: 2%;
+    height: 30px;
+    width: 40%;
+    border-radius: 5px;
+    /* background-color: inherit; */
+    border: 0px;
+}
+
+#form1{
+
+    margin-right: 5%;
+}
+
+#setting{
+
+    text-align: right;
+}
+
+#changePass{
+
+    width: 60%;
+    height: 30px;
+    border-radius: 20px;
+    border: 0px;
+    margin-top: 5%;
+}
+#mini-header{
+
+    width: 100%;
+    height: 5%;
+    background-color: inherit;
+}
+
+
+#inbox , 
+#outbox , 
+#contacts {
+
+    height: 100%;
+    width: 33.3%;
+    float: left;
+    font-weight: bolder;
+    border: 0px;
+    color: white;
+    /* background-color: black; */
+}
+
+.home-header{
+
+    background-color: black;
+}
+#incoming-div , 
+#outgoing-div , 
+#people-div , 
+#creating-msg {
+
+    width: 100%;
+    height: 76%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+#singleMessage-div{
+    /* background-color: lightskyblue; */
+    width: 100%;
+    height: 80%;
+}
+ 
+#replyArea{
+    text-align: center;
+    height: 10%;
+    /* background-color: saddlebrown; */
+    margin-top: 5%;
+}
+
+#messageContent2{
+
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: lightgray;
+}
+
+#messageHeader-div{
+
+    width: 100%;
+    height: 5%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
+
+#messageBody-div{
+    width: 70%;
+    height: 20%;
+    margin-top: 2%;
+    padding-top: 2%;
+    margin-left: 2%;
+    padding-left: 2%;
+    border-radius: 20px;
+    background-color: lightgray;
+}
+
+#incoming-div{
+
+    /* background-color: yellow; */
+    text-align: left;   
+}
+
+.in-msg{
+
+    width: 100%;
+    height: 10%;
+    background-color: royalblue;
+    /* display: block; */
+}
+
+#outgoing-div{
+
+    /* background-color: brown;    */
+    text-align: right;
+}
+
+.options{
+
+    width: 100%;
+    height: 7%;
+    background-color: inherit;
+    border: 0px;
+}
+/* 
+*{background-color: red;} */
+
+/* *{color: red;} */
